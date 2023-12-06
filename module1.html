@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <meta charset="utf-8">
+        <meta name ='viewport' content="width=device-width,initial-scale=1.0">
+        <link href="moduletest1.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Inter:wght@200;400;700&family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Inter:wght@200;400;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Dangrek&family=Inter:wght@200;400;700&family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="scoreBoard">
+            <div class="sbLeft">ROCK<br>
+            PAPER<br>
+            SCISSORS</div>
+            <div class="sbRight">
+                <div class="PCscore"><span class="player">COMPUTER<BR>SCORE</span><br>
+                <div class="PCscoreCount"></div></div>
+                <div class="MyScore"><span class="player">YOUR<BR>SCORE</span><br>
+                <div class="MyScoreCount"></div></div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="rock" onclick="startGame('Rock')">
+                <button class="RockImg"><img src="C:/Users/vishn/Downloads/Rock.png" style="width:70px;"></button>
+            </div>
+            <div id="Scissor" onclick="startGame('Scissor')">
+                <button class="ScissorImg"><img src="C:/Users/vishn/Downloads/scissor.png" style="width:60px;"></button>
+            </div>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div id="Paper" onclick="startGame('Paper')">
+                <button class="PaperImg"><img src="C:/Users/vishn/Downloads/Paper.png" style="width:60px;"></button>
+            </div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div id="rulesWindow">
+            <h2 class="ruleTitle">Game Rules</h2>
+            <ul>
+                <li><span>Rock beats scissors,scissors beats<br>paper,and paper beats rocks.</span></li><br>
+                <li><span>Agree ahead of time whether you will<br> count of "rock,paper,scissors,<br>shoot" or just "rock,paper,scissors.</span></li><br>
+                <li><span>Use rock,paper,scissors to settle<br>minor decisions or simply play to<br>pass time</span></li><br>
+                <li><span>If both players lay down the same<br> hand,each player lays down another<br>hand.</span></li><br>
+            </ul>
+        </div>
+        <div class="ResultHand">
+            <div class="PlayerHand">
+                <h2 class="PlayerHandTiltle">YOU PICKED</h2><br>
+                <div class="PlayerHandImage">
+                    <img id="UserPickedImg" src="C:/Users/vishn/Downloads/Rock.png">
+                </div>
+            </div>
+            <div class="Refere">
+                <div class="Decision"><h2 ID="DecisionHead">YOU WON</h2>
+                <stan class="against">AGAINST PC</stan></div><br>
+                <button class="playAgain" onclick="playagain()">PLAY AGAIN</button>
+            </div>
+            <div class="PCHand">
+                <h2>PC PICKED</h2><br>
+                <div class="PCHandImage"><img id="PCpickedImg" src="C:/Users/vishn/Downloads/scissor.png"></div>
+            </div>
+
+        </div>
+        <button class="victory" onclick="Congrats()">NEXT</button>
+        <button class="ruleButton" type="button" onclick="openRuleWindow()">RULES</button>
+    <button type="button" id="closeButton" onclick="closeRuleWindow()" style="background: none;border:none;">
+        <img src ="C:/Users/vishn/Downloads/Ellipse 6.png">
+        <span class="closeIcon">X</span>
+    </button>
+    <div class="CelebrateDiv">
+        <img src="C:/Users/vishn/Downloads/Group 5.png">
+        <img id="cup" src="C:/Users/vishn/Downloads/Vector (2).png">
+        <div class="VictoryText">
+            <h1 id="hurray">HURRAY!!</h1><br>
+            <H3 id="GameWin">YOU WON THE GAME</H3><br><br>
+            <button class="playAgain afterWin" onclick="BackToGame()">PLAY AGAIN</button>
+        </div>
+</div>
+
+    <script src="moduletest.js"></script>
+ </body>
+</html>

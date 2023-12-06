@@ -1,0 +1,413 @@
+body{
+    background-color:#89C15E;
+}  
+#scoreBoard
+{
+    border: 2px solid white;
+    width:700px;
+    height:125px;
+    margin-top:70px;
+    margin-left: 300px;
+    border-radius:7px;
+    box-sizing: border-box;
+}
+.sbLeft{
+    color: white;
+    font-family: Roboto;
+    padding-left:15px;
+    padding-top:12px;
+    line-height: 33px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    width:50%;
+    float:left;
+}
+.sbRight
+{
+   float:left;
+}
+.PCscore
+{
+    margin-left:80px;
+    margin-top:10px;
+    border:1px solid white;
+    width:100px;
+    height:100px;
+    border-radius:7px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-family: Roboto;
+    text-align: center;
+    color: #656565;
+    float: left;
+}
+
+.MyScore
+{
+   float:left;
+   margin-left:30px;
+   margin-top:10px;
+   border:1px solid white;
+   border-radius:7px;
+   background-color:#FFFFFF;
+   font-size:14px;
+   font-family: Roboto;
+   text-align:center;
+   color:#656565;
+   width:100px;
+   height:100px;
+   box-sizing: border-box;
+}
+.player
+{
+    display:inline-block;
+    padding-top:5px;
+}
+.ruleButton
+{
+   left:1260px;
+   top:550px;
+   width:85px;
+   height:30px;
+   border:1px solid white;
+   border-radius:7px;
+   background-color: #89C15E;
+   color:#FFFFFF;
+   font-family: Roboto;
+   font-size:14px;
+   letter-spacing:3px;
+   font-weight:80%;
+   position: fixed;
+}
+#rulesWindow
+{
+   top:220px;
+   left:1040px;
+   width:300px;
+   height:300px;
+   border: 5px solid white;
+   border-radius:7px;
+   background-color:#004429;
+   box-sizing: border-box;
+   color:white;
+   font-size:13px;
+   font-family: Roboto;
+   display:none;
+   position:fixed;
+
+}
+.ruleTitle
+{
+    text-align: center;
+    color:white;
+    letter-spacing: 4px;
+}
+ul{
+    list-style-type:square;
+}
+li{
+    color:gold;
+    font-size: 14px;
+}
+li span{
+    color:white;
+    font-size: 13px;
+    font-weight: 600px;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+button img{
+    width:50px;
+    height:50px;
+}
+#closeButton
+{
+    left:1300px;
+    top:190px;
+    position:fixed;
+    display:none;
+}
+.closeIcon
+{
+    left:1321px;
+    top:185px;
+    position: fixed;
+    color:#FFFFFF;
+    font-size: 35px;
+    font-family: 'Dangrek';
+    display:none;
+}
+.container
+{
+    margin-top:70px;
+    margin-left:500px;
+    width:400px;
+    display:block;
+}
+#rock
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border: 14px solid #0074B6;
+    background-color: #FFFFFF;
+    margin-right:140px;
+    float:left;
+}
+.RockImg
+{
+  border:none;
+  background:none;
+  padding-left:17px;
+  padding-top:20px;
+}
+#Scissor
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:14px solid #BD00FF;
+    background-color:#FFFFFF;
+    left:800px;
+    float:left;
+}
+.ScissorImg
+{
+    border:none;
+    background:none;
+    padding-left:23px;
+    padding-top:22px;
+}
+#Paper
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:14px solid #FFA943;
+    background-color:#FFFFFF;
+    margin-left:130px;
+
+}
+.PaperImg
+{
+    border:none;
+    background:none;
+    padding-top:22px;
+    padding-left:23px;
+}
+.line1
+{
+    border:7px solid #000000A3;
+    width:126px;
+    top:323px;/*323px*/
+    left:636px;
+    position:absolute;
+}
+.line2
+{
+    border:15px solid #000000A3;
+    width:80px;
+    position:absolute;
+    transform: rotate(57deg);
+    top:422px;
+    left:579px;
+    border-bottom:none;
+
+}
+.line3
+{
+    border:15px solid #000000A3;
+    position:absolute;
+    transform:rotate(125deg);
+    width: 84px;
+    top: 419px;
+    left:713px;
+    border-bottom:none;
+}
+.PCscoreCount
+{
+    text-align: center;
+    padding-top:10px;
+    font-size: 35px;
+    font-weight: 700px;
+    color: #252525;
+}
+.MyScoreCount
+{
+    text-align:center;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700px;
+    color:#252525;
+}
+.ResultHand
+{
+    width:700px;
+    height:150px;
+    margin-left:450px;
+    margin-top:100px;
+    font-family: Roboto;
+    display: none;
+}
+.PlayerHandTiltle
+{
+    color:white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 900px;
+    padding-left:20px;
+    font-family:Roboto;
+}
+.PlayerHand
+{
+    float:left;
+    width:160px;
+
+}
+.PlayerHandImage
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:14px solid #BD00FF;
+    background-color:#FFFFFF;
+}
+.PlayerHandImage img
+{
+    border:none;
+    background:none;
+    padding-left:12px;
+    padding-top:15px;
+}
+.Refere
+{
+   float:left;
+   width:160px;
+}
+.Decision
+{
+    color:whitesmoke;
+}
+.Decision h2{
+    padding-top:70px;
+    margin-bottom: 0;
+}
+.against{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    padding-left:6px;
+ }
+ .Refere button{
+    border-radius: 6px;
+    border:1px solid #FFFFFF;
+    width:110px;
+    height:25px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #6B6B6B;
+ }
+ .PCHand h2
+ {
+    color:aliceblue;
+    font-size:10px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    font-family:Roboto;
+}
+ .PCHandImage{
+ width:100px;
+ height:100px;
+ border-radius:50%;
+ border:14px solid #FFA943;
+ background-color:#FFFFFF;
+ 
+ }
+ .PCHand
+ {
+   width:200px;
+   float:left;
+ }
+ .PCHandImage img{
+    padding-top:17px;
+    padding-left:29px;
+    border:none;
+    background:none;
+ }
+ .victory
+ {
+    position: fixed;
+    left:1150px;
+    top:550px;
+    width:85px;
+    height:30px;
+    border:1px solid white;
+    border-radius:7px;
+    background-color: #89C15E;
+    color:#FFFFFF;
+    font-family: Roboto;
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:80%;
+    display: none;
+ }
+ .CelebrateDiv img
+ {
+    height:250px;
+    position:fixed;
+    left:450px;
+    top:100px;
+ }
+ #cup
+ {
+    position:fixed;
+    left:600px;
+    width:150px;
+    height:170px;
+    top:180px;
+ }
+ .VictoryText
+ {
+    position:fixed;
+    top:400px;
+    left:500px;
+ }
+ #hurray
+ {
+    color: #FFFFFF;
+    letter-spacing: 9px;
+    font-family:Roboto;
+    font-weight:600px;
+    font-size:65px;
+    text-align:center;
+    display:inline;
+ }
+ #GameWin
+ {
+    display: inline;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    font-size: 28px;
+    font-family:Roboto;
+    font-weight:400;
+ }
+ .afterWin
+ {
+    border-radius: 6px;
+    border:1px solid #FFFFFF;
+    width:110px;
+    height:25px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #6B6B6B;
+    margin-left:30px;
+    position:fixed;
+    left:600px; 
+}
+.CelebrateDiv
+{
+    display: none;
+}
